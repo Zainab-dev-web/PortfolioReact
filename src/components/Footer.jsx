@@ -9,7 +9,7 @@ const Footer = () => {
 
     return (
         <Fragment>
-            <section className="sectIcone  py-5 d-flex justify-content-center">
+            <section className="sectIcone  py-5 text-center">
                 <div className="row no-gutters ">
                     <div className="col-8">
                         <ul className="ftrAncre d-flex text-white " >
@@ -40,15 +40,14 @@ const Footer = () => {
 
                     <div className="row ">
 
-                        <ul class="social-networks spin-icon ftrIcone justify-content-center">
-                            <li><a href="https://www.linkedin.com/" class="icon-linkedin">LinkedIn</a></li>
-                            <li><a href="https://twitter.com/" class="icon-twitter">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/" class="icon-facebook">Facebook</a></li>
-                            <li><a href="https://twitch.tv" class="icon-twitch">Twitch</a></li>
-                            <li><a href="https://github.com" class="icon-github">GitHub</a></li>
-                            <li><a href="https://pinterest.com" class="icon-pinterest">Pinterest</a></li>
-                            <li><a href="https://instagram.com" class="icon-instagram">Instagram</a></li>
-                            <li><a href="https://vimeo.com" class="icon-vimeo">Vimeo</a></li>
+                        <ul className="social-networks spin-icon ftrIcone justify-content-center">
+                            <li><a href="https://www.linkedin.com/" className="icon-linkedin">LinkedIn</a></li>
+                            <li><a href="https://www.facebook.com/" className="icon-facebook">Facebook</a></li>
+                            
+                            <li><a href="https://github.com" className="icon-github">GitHub</a></li>
+                            <li><a href="https://pinterest.com" className="icon-pinterest">Pinterest</a></li>
+                            <li><a href="https://instagram.com" className="icon-instagram">Instagram</a></li>
+                            
                         </ul>
                     </div>
 

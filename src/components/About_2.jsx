@@ -10,7 +10,7 @@ const About_2 = () => {
 
     return (
         <Fragment>
-            <section className="sect-about">
+            <section className="sect-about" id="about">
                 
                 <h2 className="text-center py-5 text-white text-uppercase">About</h2>
                 <div className="row no-gutters mx-auto my-3 pb-5 d-flex align-item-center">

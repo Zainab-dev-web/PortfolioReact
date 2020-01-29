@@ -4,6 +4,7 @@ import imgHeader from "../img/Zaidev.png"
 
 
 
+
 const Header = () => {
 
     // const [modal, setModal] = useState(false)
@@ -67,52 +68,68 @@ const Header = () => {
                             </li>
                         </ul>
 
-                        {/* <form className="form-inline my-2 my-lg-0 ml-5">/ */}
-
+                        
+                        {/* <button className="btnCV btn btn-info my-2 my-sm-0  px-4 mx-2" type="submit"  >
+                            <strong>CV</strong>
+                        </button> */}
                         <button className="btn btn-info my-2 my-sm-0  px-4" type="submit" data-toggle="modal" data-target="#devis" >
                             <strong>Devis Gratuit</strong>
                         </button>
-                        <div className="modal fade" id="devis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
 
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Demande de devis</h5> <hr />
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <div className="modal fade" id="devis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div className="modal-dialog" role="document">
+                                <div className="modal-content">
+
+                                    <div className="modal-header">
+                                        <h5 className="modal-title" id="exampleModalLabel">Demande de devis</h5> <hr />
+                                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body">
-                                        
+                                    <div className="modal-body">
+
                                         <h4 className="text-dark">Demande de devis</h4>
-                                        <hr/>
+                                        <hr />
                                         <form>
-                                            <div class="form-row">
-                                                <div class="form-group col-md-6">
+                                            <div className="form-row">
+                                                <div className="form-group col-md-6">
                                                     <label for="inputEmail4">Nom</label>
-                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Nom" />
+                                                    <input type="text" className="form-control" id="inputEmail4" placeholder="Nom" />
                                                 </div>
-                                                <div class="form-group col-md-6">
+                                                <div className="form-group col-md-6">
                                                     <label for="inputPassword4">Prénom</label>
-                                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Prénom" />
+                                                    <input type="text" className="form-control" id="inputPassword4" placeholder="Prénom" />
                                                 </div>
                                             </div>
 
-                                            <div class="form-row">
-                                                <div class="form-group col-md-6">
+                                            <div className="form-row">
+                                                <div className="form-group col-md-6">
                                                     <label for="inputEmail4">Email</label>
-                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
+                                                    <input type="email" className="form-control" id="inputEmail4" placeholder="Email" />
                                                 </div>
-                                                <div class="form-group col-md-6">
+                                                <div className="form-group col-md-6">
                                                     <label for="inputPassword4">Password</label>
-                                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Prestation désiré" />
+
+                                                    <select className="form-control" id="exampleFormControlSelect1">
+                                                        <option>Prestation désiré</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                    </select>
                                                 </div>
+
+
                                             </div>
-                                            <div class="form-group">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck" />
-                                                    <label class="form-check-label" for="gridCheck">
-                                                        Check me out
+                                            <div className="form-group">
+                                                <label for="exampleFormControlTextarea1" ></label>
+                                                <textarea className="form-control" placeholder="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                                            <div className="form-group">
+                                                <div className="form-check">
+                                                    <input className="form-check-input" type="checkbox" id="gridCheck" />
+                                                    <label className="form-check-label text-dark" for="gridCheck">
+                                                        Ne pas rélever vos données personnelles
       </label>
                                                 </div>
                                             </div>
@@ -125,9 +142,9 @@ const Header = () => {
 
 
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                                        <button type="button" class="btn btn-primary">Envoyer</button>
+                                    <div className="modal-footer">
+                                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                                        <button type="button" className="btn btn-primary">Envoyer</button>
                                     </div>
                                 </div>
                             </div>
@@ -147,10 +164,10 @@ const Header = () => {
                     <h1 className="nomPortfolio">Zaï<strong>Dev</strong></h1>
                     <br/>
                     <div className="spanheader d-flex position-absolute w-100 text-center ">
-                    <p className="spanHeader">Imagine , Reflechis et Dévellope...</p>
+                    <p className="spanHeader">Imagine , Reflechis et Développe...</p>
                     </div>
                 </div> */}
-                <a href="#home"><button className="p-3 btnhaut btn btn-info mb-3"><i class="fas fa-arrow-up text-white"></i></button></a>
+                <a href="#home"><button className="p-3 btnhaut btn btn-info mb-3 mr-3"><i className="fas fa-arrow-up text-white"></i></button></a>
             </header>
         </Fragment>
 

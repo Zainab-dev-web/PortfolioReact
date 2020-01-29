@@ -15,7 +15,7 @@ const [loading, setLoading] = useState(false)
 useEffect(()=>{
   setTimeout(()=>{
     setLoading(true)
-  },1000 )
+  },1650 )
 })
 if (loading === true){
   return (
