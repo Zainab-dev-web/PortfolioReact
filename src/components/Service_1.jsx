@@ -9,6 +9,7 @@ const Service_1 = () => {
 
     return (
         <Fragment>
+            <section className="bg-white">
             <h1 className="text-center my-4" id="service">Nos services</h1>
             <div className="text-center my-5">
                 <span className=" span1 text-secondary ">
@@ -44,7 +45,7 @@ const Service_1 = () => {
                     <h4>E-Commerce</h4><button className=" btn btn-white text-dark px-4 btn1 my-3"><strong>Voir détail</strong></button>
                 </div>
             </div>
-
+</section>
         </Fragment>
 
     );

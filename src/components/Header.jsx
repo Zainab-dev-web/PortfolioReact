@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import imgHeader from "../img/ZAÏDEV.png"
+import imgHeader from "../img/Zaidev.png"
 
 
 
@@ -37,11 +37,11 @@ const Header = () => {
 
                 <nav className={nav}>
                     <a className="navbar-brand mx-5" href="#home">Zaï<strong className="text-info">Dev</strong></a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <div className="collapse navbar-collapse  justify-content-center" id="navbarSupportedContent  ">
+                    <div className="collapse navbar-collapse  justify-content-center" id="monMenu">
                         <ul className="navbar-nav mx-auto text-white " >
 
                             <li className="nav-item text-uppercase">
@@ -75,30 +75,71 @@ const Header = () => {
                         <div className="modal fade" id="devis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
+
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Demande de devis</h5> <hr />
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                            <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        ...
+                                        
+                                        <h4 className="text-dark">Demande de devis</h4>
+                                        <hr/>
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputEmail4">Nom</label>
+                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Nom" />
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPassword4">Prénom</label>
+                                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Prénom" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputEmail4">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPassword4">Password</label>
+                                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Prestation désiré" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck" />
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Check me out
+      </label>
+                                                </div>
+                                            </div>
+
+                                        </form>
+
+
+
+
+
+
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                                        <button type="button" class="btn btn-primary">Envoyer</button>
                                     </div>
                                 </div>
                             </div>
-                                                    
-                            
-                            
-                            
+
+
+
+
                         </div>
 
 
 
-                        
+
                     </div>
                 </nav>
                 {/* <div className="nomportfolio d-flex position-absolute w-100 text-center ">

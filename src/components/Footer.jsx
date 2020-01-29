@@ -9,7 +9,7 @@ const Footer = () => {
 
     return (
         <Fragment>
-            <section className="sectIcone  py-5 d-flex">
+            <section className="sectIcone  py-5 d-flex justify-content-center">
                 <div className="row no-gutters ">
                     <div className="col-8">
                         <ul className="ftrAncre d-flex text-white " >
@@ -32,25 +32,25 @@ const Footer = () => {
 
                         </ul>
                     </div>
-                    
-                      
-{/* tout le code de code pen -test */}
+
+
+                    {/* tout le code de code pen -test */}
 
 
 
+                    <div className="row ">
 
-
-<ul class="social-networks spin-icon ftrIcone">
-  <li><a href="https://www.linkedin.com/" class="icon-linkedin">LinkedIn</a></li>
-  <li><a href="https://twitter.com/" class="icon-twitter">Twitter</a></li>
-  <li><a href="https://www.facebook.com/" class="icon-facebook">Facebook</a></li>
-  <li><a href="https://twitch.tv" class="icon-twitch">Twitch</a></li>
-  <li><a href="https://github.com" class="icon-github">GitHub</a></li>
-  <li><a href="https://pinterest.com" class="icon-pinterest">Pinterest</a></li>
-  <li><a href="https://instagram.com" class="icon-instagram">Instagram</a></li>
-  <li><a href="https://vimeo.com" class="icon-vimeo">Vimeo</a></li>
-</ul>
-
+                        <ul class="social-networks spin-icon ftrIcone justify-content-center">
+                            <li><a href="https://www.linkedin.com/" class="icon-linkedin">LinkedIn</a></li>
+                            <li><a href="https://twitter.com/" class="icon-twitter">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/" class="icon-facebook">Facebook</a></li>
+                            <li><a href="https://twitch.tv" class="icon-twitch">Twitch</a></li>
+                            <li><a href="https://github.com" class="icon-github">GitHub</a></li>
+                            <li><a href="https://pinterest.com" class="icon-pinterest">Pinterest</a></li>
+                            <li><a href="https://instagram.com" class="icon-instagram">Instagram</a></li>
+                            <li><a href="https://vimeo.com" class="icon-vimeo">Vimeo</a></li>
+                        </ul>
+                    </div>
 
 
 
@@ -58,9 +58,9 @@ const Footer = () => {
 
                 </div>
             </section >
-    <section className="py-4 copy">
-        <p className="text-center text-secondary">&copy; Copyright, by ZaïDev 2020 </p>
-    </section>
+            <section className="py-4 copy">
+                <p className="text-center text-secondary">&copy; Copyright, by ZaïDev 2020 </p>
+            </section>
         </Fragment >
 
     );
