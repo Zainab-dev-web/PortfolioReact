@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   padding-left: 75px;
-  background: #092756;
 }
 
 .wall {
@@ -39,7 +38,7 @@
   margin-top: 75px;
 }
 .second .third {
-  margin-top: 150px;
+  margin-top: 150px000;
 }
 .second .forth {
   margin-top: 225px;
@@ -54,8 +53,7 @@
   margin: 25px;
   cursor: pointer;
 }
-.second .box:hover:not(.link) > .box-face,
-.second .box:hover > .box-back {
+.second .box:hover:not(.link) > .box-face > .box-back {
   transform: translateZ(100px) rotateX(180deg);
   background-color: transparent !important;
 }
@@ -63,7 +61,7 @@
   opacity: 0;
 }
 .second .box:hover .tooltip {
-  visibility: visible;
+  visibility: visible000;
   opacity: 1;
 }
 .second .box:hover.link > .box-face {
@@ -302,6 +300,10 @@ body {
   letter-spacing: 1px;
 }
 
+header {
+  height: 100vh;
+}
+
 .navbar-brand {
   font-size: 35px !important;
 }
@@ -310,7 +312,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  width: 100vw;
+  width: 100%;
+  position: absolute;
+  height: 100vh;
 }
 
 .img_fond:hover #deux {
@@ -325,9 +329,14 @@ body {
   color: white;
 }
 
+.btncolor {
+  background-color: #363636;
+  border: none;
+}
+
 .btncolor:hover {
   background: chocolate;
-  transition: 0.5s ease;
+  transition: 1s ease;
   border: chocolate;
 }
 
@@ -336,13 +345,28 @@ body {
   justify-content: space-between;
 }
 
-#deux {
-  display: none;
-  background-color: white;
-  opacity: 0.5;
+.nomportfolio {
   z-index: 1;
   position: absolute;
-  top: 50px;
+  top: 200px;
+  left: 500px;
+  color: white;
+}
+.nomportfolio .nomPortfolio {
+  font-size: 80px;
+}
+
+.spanheader {
+  z-index: 1;
+  position: absolute;
+  top: 550px;
+  right: 75px;
+  color: white;
+}
+
+.spanHeader {
+  font-size: 30px;
+  font-style: oblique;
 }
 
 .collapse {
@@ -353,7 +377,7 @@ body {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.btn {
+.btn1 {
   border-radius: 20px !important;
 }
 
@@ -361,14 +385,11 @@ body {
   font-size: 20px;
 }
 
-.btn1 {
-  border: #020101 1px solid;
-}
-
 .btn1:hover {
   background-color: chocolate;
   border: chocolate;
   transition: 0.5 ease;
+  color: white !important;
 }
 
 i:hover {
@@ -391,6 +412,107 @@ a {
   -webkit-box-shadow: 0px 0px 15px 1px #ffffff;
   -moz-box-shadow: 0px 0px 15px 1px #ffffff;
   box-shadow: 0px 0px 15px 1px #ffffff;
+}
+
+.img-Creation {
+  position: absolute;
+}
+
+.img-contact {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+}
+
+.contenu-contact {
+  border-radius: 5px;
+  opacity: 0.8;
+  justify-content: center;
+  width: 600px;
+  height: 500px;
+  background-color: white;
+}
+
+.btncontact {
+  border: none;
+}
+
+.btncontact:hover {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  transition: 0.5 ease;
+}
+
+.sectContact {
+  background-image: url("../img/contact2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ftrAncre {
+  list-style: none;
+}
+
+.ftrIcone {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.sect-creation {
+  background-color: #363636;
+}
+
+.sect-about {
+  background-color: #363636;
+}
+
+.copy {
+  background-color: #1f2027;
+}
+
+.navfixed {
+  background-color: #363636 !important;
+  transition: 0.5s ease;
+}
+
+.btnhaut {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  border-radius: 25%;
+  margin-left: 10px;
+}
+
+.btnChoix:hover {
+  background-color: #23272b;
+  border-color: #1d2124;
+  border-radius: none !important;
+}
+
+.btnChoix {
+  background-color: #363636;
+  border: none !important;
+  border-radius: none !important;
+}
+
+.sectIcone {
+  background-color: #363636;
+}
+
+.col {
+  background-color: #d3d3d3;
+  margin-left: 10px;
+}
+.col .modal-dialog {
+  z-index: 10;
+}
+
+.modal-backdrop {
+  z-index: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

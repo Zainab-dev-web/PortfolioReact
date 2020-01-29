@@ -69,51 +69,31 @@ const Header = () => {
 
                         {/* <form className="form-inline my-2 my-lg-0 ml-5">/ */}
 
-                        <button className="btn btn-info my-2 my-sm-0  px-4" type="submit" data-toggle="modal" data-target="#exampleModal" ><strong>Devis Gratuit</strong></button>
-
-
-
-
-
-
-
-
-
-
-
-{/* modal exemple kadir */}
-
-                        <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div className="modal-dialog" role="document">
-                                <div className="modal-content">
-                                    <div className="modal-header">
-                                        <h5 className="modal-title" id="exampleModalLabel">Formulaire de contact</h5>
-                                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                        <button className="btn btn-info my-2 my-sm-0  px-4" type="submit" data-toggle="modal" data-target="#devis" >
+                            <strong>Devis Gratuit</strong>
+                        </button>
+                        <div className="modal fade" id="devis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div className="modal-body">
-                                        <div className="row">
-                                            <div className="col-6">
-                                                <input style={{ margin: 5 + 'px', borderRadius: 20 + 'px', height: 35 + 'px' }} className="form" type="text" placeholder="Nom" />
-                                                <input style={{ margin: 5 + 'px', borderRadius: 20 + 'px', height: 35 + 'px' }} className="form" type="text" placeholder="Email" />
-                                            </div>
-                                            <div className="col-6">
-                                                <input style={{ margin: 5 + 'px', borderRadius: 20 + 'px', height: 35 + 'px' }} className="form" type="text" placeholder="Prénom" />
-                                                <select id="inputState" className="form-control" style={{ margin: 5 + 'px', backgroundColor: 'rgb(0, 0, 0, 0.05)', borderRadius: 20 + 'px', height: 35 + 'px' }}>
-                                                    <option selected>Choisir le sujet...</option>
-                                                    <option>Bug</option>
-                                                    <option>Idée</option>
-                                                    <option>Amélioration</option>
-                                                    <option>Contact</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <textarea style={{ height: 100 + 'px', margin: 10 + 'px' }} className="form" name="" id="" cols="30" rows="10" placeholder="Tapez votre message ici..."></textarea>
-                                        
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
                                     </div>
                                 </div>
                             </div>
+                                                    
+                            
+                            
+                            
                         </div>
 
 
