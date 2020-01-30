@@ -9,7 +9,7 @@ const About_2 = () => {
     const [change2 , setChange2]= useState("col-12 col-sm-12 col-md-5 col-lg-5")
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if (window.scrollY >750 ) {
+            if (window.scrollY >1100 ) {
                 console.log(window.scrollY)
                 setChange('img-fluid container col-12 col-sm-12 col-md-5 col-lg-5 ml-5 animated fadeInLeft ')
                 setChange2("col-12 col-sm-12 col-md-5 col-lg-5 animated fadeInRight")

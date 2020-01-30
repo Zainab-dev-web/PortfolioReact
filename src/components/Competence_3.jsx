@@ -1,18 +1,28 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import MySQL from '../img/mysql-svg.png'
 
 
 
 const Competence_3 = () => {
 
-
+  const [change3, setChange3] = useState("section")
+  useEffect(() => {
+      window.addEventListener('scroll', () => {
+          if (window.scrollY >1800 ) {
+              console.log(window.scrollY)
+              setChange3('section animated rotateIn ')
+          } else {
+              setChange3("section")
+          }
+      })
+  })
 
 
   return (
     <Fragment>
       <section className="py-5"id="competence">
         <h2 className="text-center py-5 text-uppercase" >Mes compétences</h2>
-        <section className="section">
+        <section className={change3}>
 
           <div className="wall ">
             <div className="v-boxes">

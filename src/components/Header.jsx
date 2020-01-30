@@ -152,7 +152,7 @@ const Header = () => {
                                         <button type="button" className="btn btn-primary"  onClick={handleClick} >Envoyer</button>
                                     </div>
                                     {none === true ? <div className="alert alert-success alert-dismissible fade show " role="alert" >
-                                        <strong>Merci à vous!</strong>Votre demande de devis a bien été envoyé , vous recevrez une reponse dans votre boite mail , veuillez verifié vos spams et vos courriers indésirEables.
+                                        <strong>Merci à vous! </strong>Votre demande de devis a bien été envoyé , vous recevrez une reponse dans votre boite mail , veuillez verifié vos spams et vos courriers indésirEables.
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>

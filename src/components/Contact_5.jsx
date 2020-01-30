@@ -1,7 +1,17 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import imgContact from "../img/contact2.jpg"
 
 const Contact_5 = () => {
+
+  const [contact, setContact] =useState(false)
+
+  
+
+  const handleClick2 = () => {
+
+      setContact(true)
+  }
+
 
   return (
     <section className="sectContact py-5">
@@ -30,28 +40,14 @@ const Contact_5 = () => {
                   rows="3"></textarea>
               </div>
             </form>
-            <button className=" btncontact btn btn-dark text-uppercase text-center" type="submit" data-toggle="modal"
-              data-target="#contact">Envoyer un message</button>
+            <button className=" btncontact btn btn-dark text-uppercase text-center" onClick={handleClick2} >Envoyer un message</button>
 
-            <div className="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contact"
-              aria-hidden="true">
-              <div className="modal-dialog" role="document">
-                <div className="modal-content">width
-                  <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div className="modal-body">width
-                    ...
-                  </div>
-                  <div className="modal-footer">
-                    <button type="button" className="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {contact === true ? <div className="alert alert-success alert-dismissible fade show " role="alert" >
+              <strong>Merci à vous! </strong>Nous allons vous contacter prochainement .
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div> : ""}
           </div>
         </div>
       </div>
