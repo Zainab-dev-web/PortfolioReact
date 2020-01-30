@@ -65,12 +65,7 @@ const Header = () => {
                             <li className="nav-item text-uppercase">
                                 <a className="nav-link" href="#contact"><strong>Contact</strong></a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#"><i className="fab fa-facebook-square fa-1x"></i></a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#"><i className="fab fa-instagram fa-1x"></i></a>
-                            </li>
+                            
                         </ul>
 
 

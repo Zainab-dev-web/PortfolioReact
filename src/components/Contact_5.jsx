@@ -14,11 +14,11 @@ const Contact_5 = () => {
 
 
   return (
-    <section className="sectContact py-5">
+    <section className="sectContact "id="contact">
       <div className="container contenu-contact text-center p-5 mx-auto w-50 bg-light ">
         <div className="row">
           <div className="col-xs-12 col-lg-8 offset-lg-2">
-            <h2 className="text-uppercase" id="contact">Contact</h2>
+            <h2 className="text-uppercase" >Contact</h2>
 
             <hr />
             <p><br />

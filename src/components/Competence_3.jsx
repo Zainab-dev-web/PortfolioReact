@@ -20,7 +20,7 @@ const Competence_3 = () => {
 
   return (
     <Fragment>
-      <section className="py-5"id="competence">
+      <section className=" sectCompetence"id="competence">
         <h2 className="text-center py-5 text-uppercase" >Mes compétences</h2>
         <section className={change3}>
 

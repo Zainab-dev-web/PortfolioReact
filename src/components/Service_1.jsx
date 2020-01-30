@@ -19,8 +19,8 @@ const Service_1 = () => {
 
     return (
         <Fragment>
-            <section className="bg-white py-5">
-                <h1 className="text-center my-4" id="service">Nos services</h1>
+            <section className="sect-service bg-white "id="service">
+                <h1 className="text-center my-4" >Nos services</h1>
                 <div className="text-center my-5">
                     <span className=" span1 text-secondary ">
                         Vous souhaitez refondre l’Identité numérique de votre entreprise et notamment votre site internet
