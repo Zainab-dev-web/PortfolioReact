@@ -11,7 +11,7 @@ const Footer = () => {
         <Fragment>
             <section className="sectIcone  py-5 text-center">
                 <div className="row no-gutters ">
-                    <div className="col-8">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-8">
                         <ul className="ftrAncre d-flex text-white " >
 
                             <li className="nav-item text-uppercase">
@@ -34,13 +34,13 @@ const Footer = () => {
                     </div>
 
 
-                    {/* tout le code de code pen -test */}
+                    
 
 
 
                     <div className="row ">
 
-                        <ul className="social-networks spin-icon ftrIcone justify-content-center">
+                        <ul className="social-networks col-12 col-sm-12 col-md-12 col-lg-4 spin-icon ftrIcone justify-content-center">
                             <li><a href="https://www.linkedin.com/" className="icon-linkedin">LinkedIn</a></li>
                             <li><a href="https://www.facebook.com/" className="icon-facebook">Facebook</a></li>
                             

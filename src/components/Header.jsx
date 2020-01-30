@@ -7,7 +7,12 @@ import imgHeader from "../img/Zaidev.png"
 
 const Header = () => {
 
-    // const [modal, setModal] = useState(false)
+    const [none, setNone] = useState(false)
+
+    const handleClick = () => {
+
+        setNone(true)
+    }
 
 
     const [nav, setNav] = useState('navbartt d-flex position-absolute w-100 navbar navbar-expand-lg navbar-dark');
@@ -33,7 +38,7 @@ const Header = () => {
         <Fragment>
 
             <header className="header" id="home">
-                <img className="img_fond" src={imgHeader} alt="" />
+                <img className="img_fond" src={imgHeader} alt="Responsive image" />
 
 
                 <nav className={nav}>
@@ -68,7 +73,7 @@ const Header = () => {
                             </li>
                         </ul>
 
-                        
+
                         {/* <button className="btnCV btn btn-info my-2 my-sm-0  px-4 mx-2" type="submit"  >
                             <strong>CV</strong>
                         </button> */}
@@ -144,8 +149,15 @@ const Header = () => {
                                     </div>
                                     <div className="modal-footer">
                                         <button type="button" className="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                                        <button type="button" className="btn btn-primary">Envoyer</button>
+                                        <button type="button" className="btn btn-primary"  onClick={handleClick} >Envoyer</button>
                                     </div>
+                                    {none === true ? <div className="alert alert-success alert-dismissible fade show " role="alert" >
+                                        <strong>Merci à vous!</strong>Votre demande de devis a bien été envoyé , vous recevrez une reponse dans votre boite mail , veuillez verifié vos spams et vos courriers indésirEables.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div> : ""}
+
                                 </div>
                             </div>
 

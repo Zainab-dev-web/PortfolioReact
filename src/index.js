@@ -9,6 +9,7 @@ import "popper.js/dist/popper.js"
 import "bootstrap/dist/js/bootstrap.js"
 import '../src/sass/style.sass'
 import "./css/App.css"
+import "animate.css"
 
 
 // body{

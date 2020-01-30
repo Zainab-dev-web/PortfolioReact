@@ -1,41 +1,21 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 
 
 
 const Service_1 = () => {
 
-
-    // var textWrapper = document.querySelector('.ml11 .letters');
-    // textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span className='letter'>$&</span>");
+    const [pro, setPro] = useState("row no-gutters mx-auto w-75 my-5 d-flex")
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >540 ) {
+                console.log(window.scrollY)
+                setPro('row no-gutters mx-auto w-75 my-5 d-flex animated fadeInUp ')
+            } else {
+                setPro("row no-gutters mx-auto w-75 my-5 d-flex  ")
+            }
+        })
+    })
     
-    // anime.timeline({loop: true})
-    //   .add({
-    //     targets: '.ml11 .line',
-    //     scaleY: [0,1],
-    //     opacity: [0.5,1],
-    //     easing: "easeOutExpo",
-    //     duration: 700
-    //   })
-    //   .add({
-    //     targets: '.ml11 .line',
-    //     translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
-    //     easing: "easeOutExpo",
-    //     duration: 700,
-    //     delay: 100
-    //   }).add({
-    //     targets: '.ml11 .letter',
-    //     opacity: [0,1],
-    //     easing: "easeOutExpo",
-    //     duration: 600,
-    //     offset: '-=775',
-    //     delay: (el, i) => 34 * (i+1)
-    //   }).add({
-    //     targets: '.ml11',
-    //     opacity: 0,
-    //     duration: 1000,
-    //     easing: "easeOutExpo",
-    //     delay: 1000
-    //   });
 
     return (
         <Fragment>
@@ -45,40 +25,43 @@ const Service_1 = () => {
                     <span className=" span1 text-secondary ">
                         Vous souhaitez refondre l’Identité numérique de votre entreprise et notamment votre site internet
                     </span>
-                    <h1 className="ml11">
-                        <span className="text-wrapper">
-                            <span className="line line1"></span>
-                            <span className="letters">Hello Goodbye</span>
-                        </span>
-                    </h1>
+                    
                     <div className="text-center my-4">
                         <button className=" btncolor btn btn-secondary text-uppercase text-center  px-4 "><strong>Voir détail</strong></button></div>
 
                 </div>
-                <div className="row no-gutters mx-auto w-100 my-5 d-flex">
-                    <div className="col text-center align-item-center">
-                        <div className="my-4">
-                            <i className="fas fa-atom fa-4x"></i>
-                        </div><br />
-                        <h4>Technique </h4><button className="btn btn-white text-dark px-4 btn1 my-3"><strong>Voir détail</strong></button>
+                <div className={pro}>
+                    <div className="col-12 col-sm-6 col-md-3 text-center align-item-center">
+                        <div className="colB py-3">
+                            <div className="my-4">
+                                <i className="fas fa-atom fa-4x"></i>
+                            </div><br />
+                            <h4>Technique </h4><button className="btn btn-white text-dark px-4 btn1 my-3"><strong>Voir détail</strong></button>
+                        </div>
                     </div>
-                    <div className="col text-center align-item-center">
+                    <div className="col-12 col-sm-6 col-md-3  text-center align-item-center">
+                        <div className="colB py-3 ">
                         <div className="my-4">
                             <i className="fas fa-palette fa-4x"></i>
                         </div><br />
                         <h4>Visual Design</h4><button className="btn btn-white text-dark px-4 btn1 my-3"><strong>Voir détail</strong></button>
+                        </div>
                     </div>
-                    <div className="col text-center align-item-center">
+                    <div className="col-12 col-sm-6 col-md-3  text-center align-item-center">
+                        <div className="colB py-3">
                         <div className="my-4">
                             <i className="fas fa-mobile-alt fa-4x"></i>
                         </div><br />
                         <h4>Responsive</h4><button className="btn btn-white text-dark px-4 btn1 my-3"><strong>Voir détail</strong></button>
+                        </div>
                     </div>
-                    <div className="col text-center align-item-center">
+                    <div className="col-12 col-sm-6 col-md-3  text-center align-item-center">
+                        <div className="colB py-3">
                         <div className="my-4">
                             <i className="fas fa-shopping-bag fa-4x"></i></div>
                         <br />
                         <h4>E-Commerce</h4><button className=" btn btn-white text-dark px-4 btn1 my-3"><strong>Voir détail</strong></button>
+                        </div>
                     </div>
                 </div>
             </section>
