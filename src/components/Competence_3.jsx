@@ -179,6 +179,8 @@ const Competence_3 = () => {
             </div>
           </div>
         </section>
+        <div className="text-center">
+        <button className="btn btn-info my-3 cv">Télécharger mon CV</button></div>
       </section>
     </Fragment>
 

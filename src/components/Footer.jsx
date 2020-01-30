@@ -10,37 +10,10 @@ const Footer = () => {
     return (
         <Fragment>
             <section className="sectIcone  py-5 text-center">
-                <div className="row no-gutters ">
-                    <div className="col-12 col-sm-12 col-md-12 col-lg-8">
-                        <ul className="ftrAncre d-flex text-white " >
+                <div className="row no-gutters justify-content-center ">
+                
 
-                            <li className="nav-item text-uppercase">
-                                <a className="nav-link " href="#service"><strong>Service</strong></a>
-                            </li>
-                            <li className="nav-item text-uppercase">
-                                <a className="nav-link" href="#about"><strong>About</strong></a>
-                            </li>
-                            <li className="nav-item text-uppercase">
-                                <a className="nav-link" href="#competence"><strong>Competénce</strong></a>
-                            </li>
-                            <li className="nav-item text-uppercase">
-                                <a className="nav-link" href="#creation"><strong>Création</strong></a>
-                            </li>
-                            <li className="nav-item text-uppercase">
-                                <a className="nav-link" href="#contact"><strong>Contact</strong></a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-
-                    
-
-
-
-                    <div className="row ">
-
-                        <ul className="social-networks col-12 col-sm-12 col-md-12 col-lg-4 spin-icon ftrIcone justify-content-center">
+                        <ul className="social-networks col-12 col-sm-12 col-md-12 col-lg-4 spin-icon ftrIcone w-75 ">
                             <li><a href="https://www.linkedin.com/" className="icon-linkedin">LinkedIn</a></li>
                             <li><a href="https://www.facebook.com/" className="icon-facebook">Facebook</a></li>
                             
@@ -55,7 +28,7 @@ const Footer = () => {
 
 
 
-                </div>
+                
             </section >
             <section className="py-4 copy">
                 <p className="text-center text-secondary">&copy; Copyright, by ZaïDev 2020 </p>
