@@ -32,7 +32,7 @@ const Service_1 = () => {
                 </div>
                 <div className={pro}>
                     <div className="col-12 col-sm-6 col-md-3 text-center align-item-center">
-                        <div className="colB py-3">
+                        <div className="colB py-3 my-1">
                             <div className="my-4">
                                 <i className="fas fa-atom fa-4x"></i>
                             </div><br />
@@ -40,7 +40,7 @@ const Service_1 = () => {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-3  text-center align-item-center">
-                        <div className="colB py-3 ">
+                        <div className="colB py-3 my-1 ">
                         <div className="my-4">
                             <i className="fas fa-palette fa-4x"></i>
                         </div><br />
@@ -48,7 +48,7 @@ const Service_1 = () => {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-3  text-center align-item-center">
-                        <div className="colB py-3">
+                        <div className="colB py-3 my-1">
                         <div className="my-4">
                             <i className="fas fa-mobile-alt fa-4x"></i>
                         </div><br />
@@ -56,7 +56,7 @@ const Service_1 = () => {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-3  text-center align-item-center">
-                        <div className="colB py-3">
+                        <div className="colB py-3 my-1">
                         <div className="my-4">
                             <i className="fas fa-shopping-bag fa-4x"></i></div>
                         <br />
